@@ -1,6 +1,3 @@
-<?php
-session_start();
-?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,7 +19,7 @@ session_start();
 	<div class="header" style="padding-top:0;">
 		<img src="Images/download.jpeg" alt="zalego" style="height: 50px; width:50px;padding-top:0;" class="rounded-circle">
 		<a href="#" class="navbar-trigger"><span></span></a>
-		<span><?php echo $_SESSION['login']?></span>
+		
 		<span class="pull-right" style="padding:10px 30px;text-decoration:none">
 	      <a href="logout.php"><i class="fa fa-sign-out fa-2x"></i></a>
 	</span>
@@ -30,17 +27,16 @@ session_start();
 	<div class="sidebar">
 		<nav>
 			<ul>
-				<li>
-					<a href="">
+                <li>
+					<a href="index.php">
 						<span><i class="fa fa-home" aria-hidden="true"></i></span>
 						<a href="index.php" class="student"><span>Home</span></a>
 					</a>
 				</li>
-
 				<li>
 					<a href="">
 						<span><i class="fa fa-group"></i></span>
-						<a href="students.php" class="student"><span>Students</span></a>
+						<span>Students</span>
 					</a>
 				</li>
 				<li>
@@ -63,71 +59,47 @@ session_start();
 	</div>
 	<div class="main-content">
 		<div class="container-fluid">
-			   <div class="row">
-					<div class="col-lg-12">
-						<div class="card-header bg-dark text-white text-center">
-							<span>Top content</span>
-						</div>
-					</div>
-		        </div>
-			
-			 <div class="row">
-					<div class="col-lg-3">
-						<div class="card-header bg-dark text-white text-center">
-							<span>Students</span>
-
-						</div>
-						<div class="card-body">
-							<span><i class="fa fa-group fa-3x"></i></span>
-							<span class="float-right">00</span>
-						</div>
-						<div class="card-footer"></div>
-					</div><div class="col-lg-3">
-						<div class="card-header bg-dark text-white text-center">
-							<span>Available Courses</span>
-
-						</div>
-						<div class="card-body">
-							<span><i class="fa fa-folder-open fa-3x"></i></span>
-							<span class="float-right">00</span>
-						</div>
-						<div class="card-footer"></div>
-					</div><div class="col-lg-3">
-						<div class="card-header bg-dark text-white text-center">
-							<span>Campuses</span>
-
-						</div>
-						<div class="card-body">
-							<span><i class="fa fa-graduation-cap fa-3x"></i></span>
-							<span class="float-right">00</span>
-						</div>
-						<div class="card-footer"></div>
-					</div>
-					<div class="col-lg-3">
-						<div class="card-header bg-dark text-white text-center">
-							<span>Users</span>
-
-						</div>
-						<div class="card-body">
-							<span><i class="fa fa-user fa-3x"></i></span>
-							<span class="float-right">00</span>
-						</div>
-						<div class="card-footer"></div>
-					</div>
-
-
-
-
-				
 				<div class="row" style="width:100% ;">
 					<div class="col-lg-12">
 						<div class="card-holder bg-dark text-white text-center">
-							<span>Student Analysis</span>
+							<span>Student Table</span>
 						</div>
 						<div class="card-body">
+						<table class="table table-striped ">
+							<thead>
+								<tr>
+								<th scope="col">id</th>
+								<th scope="col">Fullname</th>
+								<th scope="col">Phone</th>
+								<th scope="col">email</th>
+								<th scope="col">course</th>
+								<th scope="col">gender</th>
 
-							<span><i class="fa fa-line-chart fa-3x" aria-hidden="true"></i></span>
-							<span class="float-right"></span></div>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+								<th scope="row">1</th>
+								<td>Mark</td>
+								<td>Otto</td>
+								<td>@mdo</td>
+								<td>web development</td>
+								<td>male</td >
+								</tr>
+								<tr>
+								<th scope="row">2</th>
+								<td>Jacob</td>
+								<td>Thornton</td>
+								<td>@fat</td>
+								</tr>
+								<tr>
+								<th scope="row">3</th>
+								<td colspan="2">Larry the Bird</td>
+								<td>@twitter</td>
+								</tr>
+							</tbody>
+						</table>
+							
 						<div class="card-footer"></div>
 
 					</div>

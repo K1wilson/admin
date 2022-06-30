@@ -16,10 +16,10 @@ require_once('processRegister.php')
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-          <div class="heade">
+          <div class="header">
                 <img src="Images/download.jpeg" alt="zalego" style="height: 50px; width:50px;" class="rounded-circle">
                 <a href="#" class="navbar-trigger"><span></span></a>
-            </div>
+          </div>
             <div class="main">
                 <div class="container-fluid">
                        <div class="row">
@@ -61,7 +61,7 @@ require_once('processRegister.php')
                    
                     <button type="submit" class="btn btn-primary" name="submitbutton">Submit</button>
                     <div class="mb-3">
-                    <span>Have an account? <a href="login.php" class="Login here">here</a></span>
+                    <span>Have an account? <a href="login.php" class="Login here">Login here</a></span>
                     </div>
                   </form>
               </div>

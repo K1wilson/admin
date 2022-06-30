@@ -1,4 +1,5 @@
 <?php
+session_start();
 //database connection
 require_once('connection.php');
 //setting
@@ -14,6 +15,7 @@ if(isset($_POST['submit']))
 
     if($fetch > 0)
     {
+        $_SESSION['login']=$userName;
         header('location:index.php');
     }
     else{
@@ -41,7 +43,7 @@ if(isset($_POST['submit']))
           <div class="header">
                 <img src="Images/download.jpeg" alt="zalego" style="height: 50px; width:50px;" class="rounded-circle">
                 <a href="#" class="navbar-trigger"><span></span></a>
-            </div>
+         </div>
             <div class="main">
                 <div class="container-fluid">
                        <div class="row">

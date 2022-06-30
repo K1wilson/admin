@@ -14,7 +14,7 @@ body
     height:50px;
     width: 100%;
     z-index: 6;
-    padding-top: 0;
+    padding-top:0;
 }
 .heade{
     position: absolute;
