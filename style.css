@@ -16,13 +16,6 @@ body
     z-index: 6;
     padding-top:0;
 }
-.heade{
-    position: absolute;
-    background-color: #ff4500;
-    height:50px;
-    min-width: 100%;
-    z-index: 6;
-}
 
 .t1{
     padding-top:50px ;
@@ -56,7 +49,7 @@ body
     position: absolute;
     width:100%;
     height: 100vh;
-    background-color:#ff0000 ;
+    background-color:#7fc242;
     z-index: 5;
     padding-top: 50px;
 }

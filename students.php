@@ -1,3 +1,12 @@
+<?php
+$server="localhost";
+$username="root";
+$password="";
+$database="zalego";
+
+$connect= mysqli_connect($server,$username,$password,$database);
+$sql = mysqli_query($connect,"SELECT * FROM enroll");
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,47 +25,8 @@
 		
 	</div>
 	<!-- All our code. write here   -->
-	<div class="header" style="padding-top:0;">
-		<img src="Images/download.jpeg" alt="zalego" style="height: 50px; width:50px;padding-top:0;" class="rounded-circle">
-		<a href="#" class="navbar-trigger"><span></span></a>
-		
-		<span class="pull-right" style="padding:10px 30px;text-decoration:none">
-	      <a href="logout.php"><i class="fa fa-sign-out fa-2x"></i></a>
-	</span>
-	</div>
-	<div class="sidebar">
-		<nav>
-			<ul>
-                <li>
-					<a href="index.php">
-						<span><i class="fa fa-home" aria-hidden="true"></i></span>
-						<a href="index.php" class="student"><span>Home</span></a>
-					</a>
-				</li>
-				<li>
-					<a href="">
-						<span><i class="fa fa-group"></i></span>
-						<span>Students</span>
-					</a>
-				</li>
-				<li>
-					<a href="">
-						<span><i class="fa fa-folder-open"></i></span>
-						<span>Courses</span>
-					</a>
-				</li>
-				<li>
-					<a href="">
-						<span><i class="fa fa-graduation-cap"></i></span>
-						<span>Campus</span>
-					</a>
-				</li>
-
-			</ul>
-
-		</nav>
-		
-	</div>
+	<?php require_once('includes/header.php')?>
+	<?php require_once('includes/sidebar.php')?>
 	<div class="main-content">
 		<div class="container-fluid">
 				<div class="row" style="width:100% ;">
@@ -65,7 +35,7 @@
 							<span>Student Table</span>
 						</div>
 						<div class="card-body">
-						<table class="table table-striped ">
+						<table class="table table-striped table-hover table-responsive ">
 							<thead>
 								<tr>
 								<th scope="col">id</th>
@@ -74,29 +44,40 @@
 								<th scope="col">email</th>
 								<th scope="col">course</th>
 								<th scope="col">gender</th>
-
+								<th scope="col">Enrolled on</th>
+								<th scope="col">Action</th>
 								</tr>
 							</thead>
 							<tbody>
+								<?php 
+								//fetch data from enrollment table
+								while($fetchrecord= mysqli_fetch_array($sql) ){
+								?>
 								<tr>
-								<th scope="row">1</th>
-								<td>Mark</td>
-								<td>Otto</td>
-								<td>@mdo</td>
-								<td>web development</td>
-								<td>male</td >
+                                <td><?php echo $fetchrecord['no']?></td>
+								<td><?php echo $fetchrecord['fullname']?></td>
+								<td><?php echo $fetchrecord['phonenumber']?></td>
+								<td><?php echo $fetchrecord['email']?></td>
+								<td><?php echo $fetchrecord['course']?></td>
+								<td><?php echo $fetchrecord['gender']?></td>
+								<td><?php echo $fetchrecord['created_at']?></td>
+								<td>
+									<a href="" class="btn btn-primary">
+									<i class="fa fa-edit"></i></a>
+									<a href="" class="btn btn-primary">
+									<i class="fa fa-eye"></i></a>
+									<a href="" class="btn btn-danger">
+									<i class="fa fa-trash"></i></a>
+
+									
+								</td>
+								
 								</tr>
-								<tr>
-								<th scope="row">2</th>
-								<td>Jacob</td>
-								<td>Thornton</td>
-								<td>@fat</td>
-								</tr>
-								<tr>
-								<th scope="row">3</th>
-								<td colspan="2">Larry the Bird</td>
-								<td>@twitter</td>
-								</tr>
+
+								<?php 
+								}
+								?>
+								
 							</tbody>
 						</table>
 							
