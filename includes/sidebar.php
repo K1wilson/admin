@@ -2,14 +2,14 @@
 		<nav>
 			<ul>
 				<li>
-					<a href="">
+					<a href="index.php">
 						<span><i class="fa fa-home" aria-hidden="true"></i></span>
 						<a href="index.php" class="student"><span>Home</span></a>
 					</a>
 				</li>
 
 				<li>
-					<a href="">
+					<a href="students.php">
 						<span><i class="fa fa-group"></i></span>
 						<a href="students.php" class="student"><span>Students</span></a>
 					</a>
