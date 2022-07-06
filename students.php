@@ -48,7 +48,7 @@ $sql = mysqli_query($connect,"SELECT * FROM enroll");
 								<td><?php echo $fetchrecord['gender']?></td>
 								<td><?php echo $fetchrecord['created_at']?></td>
 								<td>
-									<a href="" class="btn btn-primary">
+									<a href="editenrollment.php?id=<?php echo $fetchrecord['no']?>" class="btn btn-primary">
 									<i class="fa fa-edit"></i></a>
 									<a href="" class="btn btn-primary">
 									<i class="fa fa-eye"></i></a>
