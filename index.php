@@ -4,6 +4,7 @@
 <head>
 	
 	<?php require_once('includes/links.php')?>
+</head>
 
 <body>
 	<div class="img">
@@ -86,7 +87,6 @@
 	    </div>
 	</div>
 	
-<script src="jquery.min.js"></script>
-<script src="bootstrap/js/bootstrap.min.js"></script>
+<?php require_once('includes/script.php')?>
 </body>
 </html>

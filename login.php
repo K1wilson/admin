@@ -86,7 +86,6 @@ if(isset($_POST['submit']))
 
 
 
-<script src="jquery.min.js"></script>
-<script src="bootstrap/js/bootstrap.min.js"></script>
+              <?php require_once('includes/script.php')?>
 </body>
 </html>

@@ -1,10 +1,5 @@
 <?php
-$server="localhost";
-$username="root";
-$password="";
-$database="zalego";
-
-$connect= mysqli_connect($server,$username,$password,$database);
+require_once('logics/dbconnection.php');
 $sql = mysqli_query($connect,"SELECT * FROM enroll");
 ?>
 <!DOCTYPE html>
@@ -53,7 +48,7 @@ $sql = mysqli_query($connect,"SELECT * FROM enroll");
 								<td><?php echo $fetchrecord['gender']?></td>
 								<td><?php echo $fetchrecord['created_at']?></td>
 								<td>
-									<a href="editstudent.php" class="btn btn-primary">
+									<a href="" class="btn btn-primary">
 									<i class="fa fa-edit"></i></a>
 									<a href="" class="btn btn-primary">
 									<i class="fa fa-eye"></i></a>
@@ -79,7 +74,6 @@ $sql = mysqli_query($connect,"SELECT * FROM enroll");
 		</div>
 	</div>
 	
-<script src="jquery.min.js"></script>
-<script src="bootstrap/js/bootstrap.min.js"></script>
+	<?php require_once('includes/script.php')?>
 </body>
 </html>
