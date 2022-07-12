@@ -11,7 +11,9 @@
 		
 	</div>
 	<!-- All our code. write here   -->
-	<?php require_once('includes/header.php')?>
+	<div class="header">
+	 <?php require_once('includes/header.php')?>
+    </div>
 	<?php require_once('includes/sidebar.php')?>
 	<div class="main-content">
 		<div class="container-fluid">
@@ -34,7 +36,8 @@
 							<span class="float-right">00</span>
 						</div>
 						<div class="card-footer"></div>
-					</div><div class="col-lg-3">
+					</div>
+					<div class="col-lg-3">
 						<div class="card-header bg-dark text-white text-center">
 							<span>Available Courses</span>
 
@@ -44,7 +47,8 @@
 							<span class="float-right">00</span>
 						</div>
 						<div class="card-footer"></div>
-					</div><div class="col-lg-3">
+					</div>
+					<div class="col-lg-3">
 						<div class="card-header bg-dark text-white text-center">
 							<span>Campuses</span>
 
@@ -66,10 +70,6 @@
 						</div>
 						<div class="card-footer"></div>
 					</div>
-
-
-
-
                 </div>
 				<div class="row" style="width:100% ;">
 					<div class="col-lg-12">

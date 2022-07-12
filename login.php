@@ -44,43 +44,47 @@ if(isset($_POST['submit']))
                 <img src="Images/download.jpeg" alt="zalego" style="height: 50px; width:50px;" class="rounded-circle">
                 <a href="#" class="navbar-trigger"><span></span></a>
          </div>
-            <div class="main">
+            <div class="main-content">
                 <div class="container-fluid">
                        <div class="row">
-                            <div class="col-lg-12 bg-light">
+                            <div class="col-lg-12 bg-light"style="width:50%;">
                                 <div class="card-header bg-dark text-white text-center">
                                     <span>Zalego Training/Admin </span>
                                 </div>
                             </div>
                         </div>
-                        <div class="img" style=" justify-content: center;
-                        align-content: center;">
-                            <img src="Images/download.jpeg" alt="zalego" style="height: 70px; width:70px;" class="rounded-circle">
-                            <a href="#" class="navbar-trigger"><span></span></a>
+                        <div class="card-header width:50%">
+                            <div class="img" style="justify-content:center;align-content: center;margin-left:50vh;">
+                                <img src="Images/download.jpeg" alt="zalego" style="height: 70px; width:70px;" class="rounded-circle">
+                                <a href="#" class="navbar-trigger"><span></span></a>
+                            </div>
+                            
+                            <form action="login.php" method="POST" >
+                                    <div class="mb-3">
+                                    <label for="username" class="form-label">Username</label>
+                                    <input type="text" class="form-control" id="username" placeholder="Enter your user name" name="userName">
+                                    
+                                    </div>
+                                    
+                                    <div class="mb-3">
+                                    <label for="InputPassword" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="Password" name="password">
+                                    </div>
+                        
+                        
+                                    <button type="submit" class="btn btn-primary" name="submit" >Submit</button>
+                                    <div class="mb-3">
+                                    <span>Have no account?Sign in <a href="register.php" class="here">here</a></span><br>
+                        
+                                    </div>
+                            </form>
+                
+                            
+                               
+                            
                         </div>
                 </div>
             </div>
-            <div class="card bg-light shadow">
-                <form action="login.php" method="POST" >
-                    <div class="mb-3">
-                    <label for="username" class="form-label">Username</label>
-                    <input type="text" class="form-control" id="username" placeholder="Enter your user name" name="userName">
-                    
-                  </div>
-                    
-                    <div class="mb-3">
-                      <label for="InputPassword" class="form-label">Password</label>
-                      <input type="password" class="form-control" id="Password" name="password">
-                    </div>
-                   
-                   
-                    <button type="submit" class="btn btn-primary" name="submit" >Submit</button>
-                    <div class="mb-3">
-                    <span>Have no account?Sign in <a href="register.php" class="here">here</a></span><br>
-                   
-                    </div>
-                </form>
-              </div>
         
 
 

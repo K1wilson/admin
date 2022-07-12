@@ -1,38 +1,23 @@
 <!-- student being able to edit data -->
 <?php
+$msg="";
 require_once('logics/dbconnection.php');
-$querystudent= mysqli_query($connect,
- "SELECT * FROM enroll WHERE no='".$_GET['no']."'  ");
+$querystudent= mysqli_query(
+	$connect,"SELECT * FROM enroll WHERE no='".$_GET['id']."'  ");
 while($fetchstudent = mysqli_fetch_array($querystudent))
-{$fullname=$fetchstudent['fullname'];
+{
+ $fullname=$fetchstudent['fullname'];
  $phonenumber=$fetchstudent['phonenumber'];
  $email=$fetchstudent['email'];
  $gender=$fetchstudent['gender'];
  $course=$fetchstudent['course'];
+ $id=$fetchstudent['no'];
+
 
 
 }
 //update user records
-if(isset($_POST['update']))
-{
-	//fetch form data
-	$fullname=$_POST['fullname'];
-	$phonenumber=$_POST['phonenumber'];
-	$email=$_POST['email'];
-	$gender=$_POST['gender'];
-	$course=$_POST['course'];
-	//sql query
-	$update= mysqli_query($connect,"UPDATE enroll SET fullname='$fullname',phonenumber='$phonenumber',email='$email',gender='$gender',course='$course' WHERE no=' ".$_GET['no']." ' ");
-
-	if($update){
-		$msg="message updated succesfully";
-	}
-	else{
-		$msg="message not updated successfully";
-	}
-	
-
-}
+require_once('logics/update.php');
 ?>
 
 <!DOCTYPE html>
@@ -54,8 +39,10 @@ if(isset($_POST['update']))
 		            <div class="card-body shadow">
 						<div class="class-header text-center bg-dark">
 							<h4 style="color:#ffffff;">Edit Student <?php echo $fullname?></h4>
+							<span style="color:white;"><?php echo $msg?></span>
 						</div>
-						<form action="editenrollment.php" method="POST">
+						<!-- edit -->
+						<form action="editenrollment.php?id=<?php echo $id?> " method="POST">
 							
 							<div class="row" >
 								<div class="mb-3 col-lg-6" >
