@@ -1,4 +1,9 @@
-
+<?php
+require_once('logics/dbconnection.php');
+//counting number of students
+$queryenrolled=mysqli_query($connect,"SELECT * FROM enroll");
+$countstudents=mysqli_num_rows($queryenrolled);
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -23,7 +28,7 @@
 							<span>Top content</span>
 						</div>
 					</div>
-		        </div>
+		       </div>
 			
 			    <div class="row">
 					<div class="col-lg-3">
@@ -33,7 +38,7 @@
 						</div>
 						<div class="card-body">
 							<span><i class="fa fa-group fa-3x"></i></span>
-							<span class="float-right">00</span>
+							<span class="float-right badge bg-dark rounded-pill" style="font-size:22px;"><b style="color:white;"><?php echo $countstudents ?></b></span>
 						</div>
 						<div class="card-footer"></div>
 					</div>

@@ -21,7 +21,7 @@ $sql = mysqli_query($connect,"SELECT * FROM enroll");
 							<span>Student Table</span>
 						</div>
 						<div class="card-body">
-						<table class="table table-striped table-hover table-responsive ">
+						<table class="table table-striped table-hover table-responsive "  style="font-size:12px;">
 							<thead>
 								<tr>
 								<th scope="col">id</th>
