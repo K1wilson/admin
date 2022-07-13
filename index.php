@@ -3,6 +3,10 @@ require_once('logics/dbconnection.php');
 //counting number of students
 $queryenrolled=mysqli_query($connect,"SELECT * FROM enroll");
 $countstudents=mysqli_num_rows($queryenrolled);
+//display number of females or males
+$querygender=mysqli_query($connect,"SELECT*FROM enroll WHERE gender='Female'");
+$countfemale=mysqli_num_rows($querygender)
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -49,7 +53,7 @@ $countstudents=mysqli_num_rows($queryenrolled);
 						</div>
 						<div class="card-body">
 							<span><i class="fa fa-folder-open fa-3x"></i></span>
-							<span class="float-right">00</span>
+							<span class="float-right"><?php echo $countfemale ?></span>
 						</div>
 						<div class="card-footer"></div>
 					</div>

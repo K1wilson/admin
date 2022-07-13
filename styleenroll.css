@@ -63,13 +63,7 @@ body
     padding:0;
 
 }	
-.card{
-    width:70vh;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    margin-left:20vh;
-}							
+					
 .sidebar ul li
 {
     padding: 20px 10px;
@@ -174,5 +168,3 @@ body
         .main-content{margin-left: 200px;}
 }
     
-
-

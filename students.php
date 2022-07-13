@@ -50,9 +50,9 @@ $sql = mysqli_query($connect,"SELECT * FROM enroll");
 								<td>
 									<a href="editenrollment.php?id=<?php echo $fetchrecord['no']?>" class="btn btn-primary">
 									<i class="fa fa-edit"></i></a>
-									<a href="" class="btn btn-primary">
+									<a href="view-enrollment.php?id=<?php echo $fetchrecord['no']?>" class="btn btn-primary">
 									<i class="fa fa-eye"></i></a>
-									<a href="" class="btn btn-danger">
+									<a href="delete.php?id=<?php echo $fetchrecord['no']?>" class="btn btn-danger">
 									<i class="fa fa-trash"></i></a>
 
 									

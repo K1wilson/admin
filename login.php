@@ -37,7 +37,7 @@ if(isset($_POST['submit']))
     <title>Document</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="styleenroll.css">
 </head>
 <body>
           <div class="header">
@@ -53,7 +53,7 @@ if(isset($_POST['submit']))
                                 </div>
                             </div>
                         </div>
-                        <div class="card-header width:50%">
+                        <div class="card-header width:30%">
                             <div class="img" style="justify-content:center;align-content: center;margin-left:50vh;">
                                 <img src="Images/download.jpeg" alt="zalego" style="height: 70px; width:70px;" class="rounded-circle">
                                 <a href="#" class="navbar-trigger"><span></span></a>

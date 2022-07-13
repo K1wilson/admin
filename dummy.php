@@ -34,3 +34,11 @@ while ($fetchrecords = mysqli_fetch_array($sql)){
 									
 								</td>
 								</tr>
+								<div class="card-body">
+                            
+                            <ul class="list-group">
+                              <li class="list-group-item">Gender:<span  class="float-right badge badge-primary"><?php echo $gender?></span></li>
+                              <li class="list-group-item">Course:<span class="float-right badge  badge-primary"><?php echo $course?></span></li>
+                              
+                            </ul>
+                        </div>		
