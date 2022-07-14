@@ -16,13 +16,11 @@ $countfemale=mysqli_num_rows($querygender)
 </head>
 
 <body>
-	<div class="img">
-		
-	</div>
+	
 	<!-- All our code. write here   -->
-	<div class="header">
-	 <?php require_once('includes/header.php')?>
-    </div>
+	
+	<?php require_once('includes/header.php')?> 
+
 	<?php require_once('includes/sidebar.php')?>
 	<div class="main-content">
 		<div class="container-fluid">

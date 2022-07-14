@@ -37,6 +37,7 @@ require_once('logics/update.php');
 	        <div class="container-fluid">
 		        <div class="col-lg-12">
 		            <div class="card-body shadow">
+						<span class="alert alert-success" ><?php echo $msg="";?></span>
 						<div class="class-header text-center bg-dark">
 							<h4 style="color:#ffffff;">Edit Student <?php echo $fullname?></h4>
 							<span style="color:white;"><?php echo $msg?></span>

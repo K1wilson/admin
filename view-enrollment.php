@@ -10,6 +10,7 @@ while($fetchstudent = mysqli_fetch_array($querystudent))
  $gender=$fetchstudent['gender'];
  $course=$fetchstudent['course'];
  $id=$fetchstudent['no'];
+ $enrolled=$fetchstudent['created_at'];
 
 
 
@@ -69,6 +70,7 @@ while($fetchstudent = mysqli_fetch_array($querystudent))
                             <ul class="list-group">
                               <li class="list-group-item">Gender:<span  class="float-right badge badge-primary"><?php echo $gender?></span></li>
                               <li class="list-group-item">Course:<span class="float-right badge  badge-primary"><?php echo $course?></span></li>
+                              <li class="list-group-item">Enrolled on:<span class="float-right badge  badge-primary"><?php echo $enrolled?></span></li>
                               
                             </ul>
                         </div>	

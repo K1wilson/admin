@@ -7,11 +7,9 @@ $sql = mysqli_query($connect,"SELECT * FROM enroll");
 
 <?php require_once('includes/links.php')?>
 <body>
-	<div class="img">
-		
-	</div>
+	
 	<!-- All our code. write here   -->
-	<?php require_once('includes/header.php')?>
+	<?php require_once('includes/header.php')?> 
 	<?php require_once('includes/sidebar.php')?>
 	<div class="main-content">
 		<div class="container-fluid">

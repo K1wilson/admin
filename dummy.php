@@ -34,11 +34,54 @@ while ($fetchrecords = mysqli_fetch_array($sql)){
 									
 								</td>
 								</tr>
-								<div class="card-body">
-                            
-                            <ul class="list-group">
-                              <li class="list-group-item">Gender:<span  class="float-right badge badge-primary"><?php echo $gender?></span></li>
-                              <li class="list-group-item">Course:<span class="float-right badge  badge-primary"><?php echo $course?></span></li>
-                              
-                            </ul>
-                        </div>		
+								<div class="container register-container" style="padding-top:70px; padding-bottom:10px;">
+        <div class="card student-register-card" style="padding:20px">
+
+            
+            
+
+            <form method="POST" action="login.php" style="padding-bottom: 20px;" id="fnlForm" enctype="multipart/form-data">
+                <input type="hidden" name="_token" value="KAXdOuLzo8yOxaLshXSCkDccaujz8dbyu5r45PeU">
+                <div class="container">
+                    <!-- <h3  class="enroll-header"><Register/h3> -->
+                    <h2 class="enroll-header">Login</h2>
+                    <div class="form-row" style="column-gap: 0px; ">
+                        <div class="form-group col-lg-12 col-md-12">
+                            <label for="email" class="enroll-label">Email</label>
+                            <input type="email" class="form-control br-radius" name="email" id="email" placeholder="example@email.com" required="" autocoplete="on">
+                        </div>
+                    </div>
+
+                    <div class="form-row" style="column-gap: 0px">
+                        <div class="form-group col-lg-12 col-md-12">
+                            <label for="inputPassword4" class="enroll-label">Password</label>
+                            <div class="input-icon-container" id="show_hide_password">
+                                <input type="password" class="form-control br-radiu" id="inputPassword" name="password" placeholder="Type your password" value="" required="" autocomplete="current-password">
+                                <a href=""><i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <h2 class="enroll-login">Don't have an account?
+                                <a href="register.php" style="color:#F57E20; text-decoration:underline"> Enroll.</a>
+                            </h2>
+                        </div>
+
+                    </div>
+
+                    <button type="submit" class="btn btn-block" style="background-color: #F57E20; color: #fff; width: 368px; border-radius: 10px; margin-bottom: 15px;">Sign
+                        In</button>
+
+                                        <a class="" href="https://hrmis.zalegoacademy.ac.ke/school/public/password/reset" style="color:#F57E20; text-decoration:underline; padding-top:10px;">
+                        Forgot Your Password?
+                    </a>
+                                    </div>
+
+
+
+            </form>
+
+        </div>
+    </div>	

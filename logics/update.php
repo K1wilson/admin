@@ -14,7 +14,7 @@ if(isset($_POST['update']))
 	 WHERE no=' ".$_GET['id']." ' ");
 
 	if($update){
-		$msg="message updated succesfully";
+		$msg="successfull update";
 	}
 	else{
 		$msg="message not updated successfully";

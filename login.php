@@ -53,36 +53,56 @@ if(isset($_POST['submit']))
                                 </div>
                             </div>
                         </div>
-                        <div class="card-header width:30%">
-                            <div class="img" style="justify-content:center;align-content: center;margin-left:50vh;">
+                        <div class="img" style=" justify-content: center;
+                            align-content: center;margin-left:39%;">
                                 <img src="Images/download.jpeg" alt="zalego" style="height: 70px; width:70px;" class="rounded-circle">
                                 <a href="#" class="navbar-trigger"><span></span></a>
-                            </div>
-                            
-                            <form action="login.php" method="POST" >
-                                    <div class="mb-3">
-                                    <label for="username" class="form-label">Username</label>
-                                    <input type="text" class="form-control" id="username" placeholder="Enter your user name" name="userName">
-                                    
+                        </div> 
+                    <div class="container register-container" style="padding-top:70px; padding-bottom:10px;width:50%">
+                        <div class="card student-register-card shadow" style="padding:20px">
+                            <form action="login.php" method="POST" style="padding-bottom: 20px;" id="fnlForm" enctype="multipart/form-data">
+                                
+                                <div class="container">
+                                    <!-- <h3  class="enroll-header"><Register/h3> -->
+                                    <h2 class="enroll-header">Login</h2>
+                                    <div class="form-row" style="column-gap: 0px; ">
+                                        <div class="form-group col-lg-12 col-md-12">
+                                            <label for="email" class="enroll-label">Username</label>
+                                            <input type="text" class="form-control br-radius" name="userName" id="email" placeholder="username" required="" autocoplete="on">
+                                        </div>
                                     </div>
-                                    
-                                    <div class="mb-3">
-                                    <label for="InputPassword" class="form-label">Password</label>
-                                    <input type="password" class="form-control" id="Password" name="password">
+
+                                    <div class="form-row" style="column-gap: 0px">
+                                        <div class="form-group col-lg-12 col-md-12">
+                                            <label for="inputPassword4" class="enroll-label">Password</label>
+                                            <div class="input-icon-container" id="show_hide_password">
+                                                <input type="password" class="form-control br-radiu" id="inputPassword" name="password" placeholder="Type your password" value="" required="" autocomplete="current-password">
+                                                
+                                            </div>
+
+                                        </div>
                                     </div>
-                        
-                        
-                                    <button type="submit" class="btn btn-primary" name="submit" >Submit</button>
-                                    <div class="mb-3">
-                                    <span>Have no account?Sign in <a href="register.php" class="here">here</a></span><br>
-                        
+                                    <div class="row">
+                                        <div class="col-12">
+                                           <span> Don't have an account?
+                                                <a href="register.php" style="text-decoration:underline"> Enroll.</a>
+                                            </span>
+                                        </div>
+
                                     </div>
+
+                                    <button type="submit" class="btn btn-primary" style=" border-radius: 10px; margin-bottom: 15px;" name="submit">Submit
+                                    </button>
+
+                                        
+                                    </div>
+
+
+
                             </form>
-                
-                            
-                               
-                            
+
                         </div>
+                    </div>	
                 </div>
             </div>
         
