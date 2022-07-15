@@ -1,5 +1,6 @@
 
 <head>
+   
 	<title>Bootstrap Admin Template</title>
 	<meta charset="UTF-8">
 	<meta name="description" content="Creating admin dashboard">
@@ -9,4 +10,6 @@
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
+	<meta property="og:image" content="Images/download.jpeg">
+	<meta property="og:image:type" content="Images/download.jpeg">
 </head>
