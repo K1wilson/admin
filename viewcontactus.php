@@ -40,7 +40,7 @@ while($fetchstudent = mysqli_fetch_array($querystudent))
     <div class="main-content">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-12">
                     <div class="card">
                         <div class="card-header bg-dark text-white text-center">
                             <h4 class="class-title">Personal Information</h4>
@@ -52,33 +52,18 @@ while($fetchstudent = mysqli_fetch_array($querystudent))
                               <li class="list-group-item">Firstname:<span  class="float-right badge badge-primary"><?php echo $firstname?></span></li>
                               <li class="list-group-item">Lastname<span class="float-right badge  badge-primary"><?php echo $lastname?></span></li>
                               <li class="list-group-item">Email<span class="float-right badge  badge-primary"><?php echo $email?></span></li>
-                            </ul>
-                        </div>
-                        
-                        
-                    </div>
-
-                </div>
-                <div class="col-lg-6">
-                    <div class="card">
-                        <div class="card-header bg-dark text-white text-center">
-                            <h4 class="class-title">Other Information</h4>
-                            
-                        </div>
-                        <div class="card-body">
-                            
-                            <ul class="list-group">
                               <li class="list-group-item">Phonenumber:<span  class="float-right badge badge-primary"><?php echo $phonenumber?></span></li>
                               <li class="list-group-item">Message:<span class="float-right badge  badge-primary"><?php echo $message?></span></li>
                               <li class="list-group-item">Created on:<span class="float-right badge  badge-primary"><?php echo $enrolled?></span></li>
                               
                             </ul>
-                        </div>	
+                        </div>
                         
                         
                     </div>
 
                 </div>
+                
 			</div>
             <div class="row">
                 
