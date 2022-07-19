@@ -31,9 +31,7 @@ while($fetchstudent = mysqli_fetch_array($querystudent))
     <link rel="stylesheet" href="styleenroll.css">
 </head>
 <body>
-	<div class="img">
-		
-	</div>
+	
 	<!-- All our code. write here   -->
 	<?php require_once('includes/header.php')?>
 	<?php require_once('includes/sidebar.php')?>
@@ -65,9 +63,7 @@ while($fetchstudent = mysqli_fetch_array($querystudent))
                 </div>
                 
 			</div>
-            <div class="row">
-                
-			</div>
+            
         </div>
     </div>
 	
