@@ -32,6 +32,12 @@
 						<span>Contact us</span>
 					</a>
 				</li>
+				<li>
+					<a href="subscribers.php">
+						<span><i class="fa fa-address-book" aria-hidden="true"></i></span>
+						<span>Subscribers</span>
+					</a>
+				</li>
 
 			</ul>
 
